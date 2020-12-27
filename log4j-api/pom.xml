@@ -158,8 +158,7 @@
             <id>default-compile</id>
             <!-- recompile everything for target VM except the module-info.java -->
             <configuration>
-              <source>1.8</source>
-              <target>1.8</target>
+              <release>${javaRelease}</release>
             </configuration>
           </execution>
         </executions>
