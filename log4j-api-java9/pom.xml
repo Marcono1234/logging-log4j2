@@ -84,8 +84,6 @@
           </execution>
         </executions>
         <configuration>
-          <source>9</source>
-          <target>9</target>
           <release>9</release>
           <proc>none</proc>
           <!-- disable errorprone -->

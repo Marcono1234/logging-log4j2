@@ -201,8 +201,8 @@
                   <Implementation-Version>${project.version}</Implementation-Version>
                   <Implementation-Vendor>${project.organization.name}</Implementation-Vendor>
                   <Implementation-Vendor-Id>org.apache</Implementation-Vendor-Id>
-                  <X-Compile-Source-JDK>${maven.compiler.source}</X-Compile-Source-JDK>
-                  <X-Compile-Target-JDK>${maven.compiler.target}</X-Compile-Target-JDK>
+                  <X-Compile-Source-JDK>${javaRelease}</X-Compile-Source-JDK>
+                  <X-Compile-Target-JDK>${javaRelease}</X-Compile-Target-JDK>
                   <Multi-Release>true</Multi-Release>
                 </manifestEntries>
               </archive>
@@ -224,8 +224,8 @@
                   <Implementation-Version>${project.version}</Implementation-Version>
                   <Implementation-Vendor>${project.organization.name}</Implementation-Vendor>
                   <Implementation-Vendor-Id>org.apache</Implementation-Vendor-Id>
-                  <X-Compile-Source-JDK>${maven.compiler.source}</X-Compile-Source-JDK>
-                  <X-Compile-Target-JDK>${maven.compiler.target}</X-Compile-Target-JDK>
+                  <X-Compile-Source-JDK>${javaRelease}</X-Compile-Source-JDK>
+                  <X-Compile-Target-JDK>${javaRelease}</X-Compile-Target-JDK>
                 </manifestEntries>
               </archive>
             </configuration>
@@ -316,9 +316,9 @@
           <additionalparam>-Xdoclint:none</additionalparam>
           <linksource>true</linksource>
           <links>
-            <link>http://www.osgi.org/javadoc/r4v43/core/</link>
+            <link>${osgi.javadoc.url}</link>
           </links>
-          <source>8</source>
+          <release>${javaRelease}</release>
         </configuration>
         <reportSets>
           <reportSet>
